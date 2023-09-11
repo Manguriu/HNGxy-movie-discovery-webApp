@@ -5,12 +5,12 @@ import { AiOutlineSearch } from "react-icons/ai";
 function Navbar() {
   return (
     <header className="sm:px-16 px-8 py-8 absolute z-10 w-full ml-14 ">
-      <div className="flex items-center  gap-4">
+      <div className="flex items-center gap-4 max-lg:flex-col">
         <div className="mr-20">
           {" "}
           <a href="/" className="flex gap-2 items-center">
             <img src="/tele.png" alt="" width={30} />
-            <span className="font-extrabold text-lg ml-4 text-white">
+            <span className="font-extrabold text-lg ml-4 text-white max-lg:text-[20px]">
               MovieBox
             </span>
           </a>

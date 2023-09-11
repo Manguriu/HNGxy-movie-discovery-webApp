@@ -27,6 +27,11 @@ const config: Config = {
         'hero': "url('/hero.png')",
        
       },
+      fontFamily: {
+        palanquin: ['Palanquin', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+    
     },
   },
   plugins: [],
