@@ -43,7 +43,7 @@ function Card({}: Props) {
               <input
                 type="text"
                 placeholder="Awards 9 nominations"
-                className=" text-black font-poppins font-[500] text-[20px] bg-inherit "
+                className=" text-black font-poppins font-[500] text-[20px] bg-inherit outline-none "
               />
               <div className="flex absolute right-4 items-center font-extrabold">
                 <img
