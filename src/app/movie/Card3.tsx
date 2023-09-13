@@ -9,7 +9,11 @@ function Card3({}: Props) {
       <div>
         <div className="flex items-center justify-between mt-4">
           <div className="font-extrabold text-[23px] mb-2 mt-2 font-poppins flex items-center gap-4 text-[#404040]">
-            <p>Ashoka Starwars . 2022 . PG-13 . 2h 10m</p>
+            <p>
+              <span data-testid="movie-title">Ashoka Starwars </span>.{" "}
+              <span data-testid="movie-release-date">2022</span> . PG-13 .
+              <span data-testid="movie-runtime">2h 10m</span>
+            </p>
             <span className="inline-block  border border-[#F8E7EB] rounded-[15px] px-3 py-1 text-sm font-[500] text-[#B91C1C] leading-normal">
               Action
             </span>

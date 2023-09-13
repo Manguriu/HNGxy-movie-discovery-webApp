@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { AiOutlineSearch } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
+import Search from "./Search";
 
 function Navbar() {
   return (
@@ -17,17 +17,7 @@ function Navbar() {
             </span>
           </Link>
         </div>
-
-        <div className="w-[525px]  flex items-center max-sm:flex-col gap-2 p-2 lg:border lg:border-white rounded-lg text-white">
-          <input
-            type="text"
-            placeholder="What do you want to watch?"
-            className=" sm:flex-1 max-sm:w-full text-base leading-normal text-white text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-gray-300 max-sm:rounded-full bg-inherit "
-          />
-          <nav className="flex max-sm:justify-end items-center max-sm:w-full font-extrabold">
-            <AiOutlineSearch />
-          </nav>
-        </div>
+        <Search />
         <div className="ml-[10rem]">
           <ul className="flex-1 flex justify-center items-center gap-[27px] max-lg:hidden">
             <Link

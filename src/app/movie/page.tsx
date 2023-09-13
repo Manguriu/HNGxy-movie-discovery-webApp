@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
@@ -5,14 +6,12 @@ import Card from "./Card";
 import Card3 from "./Card3";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
-type Props = {};
 
-function MoviePage({}: Props) {
+function MoviePage() {
   return (
-    <section className="max-container pt-5 movie-cont pl-10 pr-10 w-full mt-5 mb-[10rem] h-full p-4 flex gap-[24px]">
-      <div className=" sidebar relative rounded-r-[45px] border border-black border-opacity-30">
-        <Sidebar />
-      </div>
+    <section className="movie-overview" data-testid="movie-overview">
+      <Sidebar />
+
       <div>
         <Link href="/">
           <div className="w-full relative">
