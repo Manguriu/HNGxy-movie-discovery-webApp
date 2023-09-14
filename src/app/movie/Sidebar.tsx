@@ -19,7 +19,7 @@ const sidebarData = [
     Name: "Movies",
     imgUrl: "/images/projector.png",
     vector: "/images/vector.svg",
-    href: "/movie",
+    href: "/movie/1",
   },
   {
     id: 3,

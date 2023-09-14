@@ -58,7 +58,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         </span>{" "}
                         . PG-13 .
                         <span data-testid="movie-runtime">
-                          {movieData.runtime}Minutes
+                          {movieData.runtime} Min
                         </span>
                       </p>
                       {movieData.genres.map(

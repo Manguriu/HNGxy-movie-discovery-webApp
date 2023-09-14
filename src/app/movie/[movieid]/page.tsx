@@ -6,7 +6,7 @@ import axios from "axios";
 import Card from "../Card";
 import Loader from "../Loader";
 
-function MoviePage({ params: { movieid } }: any) {
+function MoviePage({ params: { movieid, runtime } }: any) {
   const [movieData, setMovieData] = useState({});
   const fetchMovieDetails = async () => {
     if (!movieid) return;
