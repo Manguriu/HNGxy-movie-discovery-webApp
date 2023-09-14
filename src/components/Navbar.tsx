@@ -20,11 +20,11 @@ function Navbar() {
           </Link>
         </div>
         <Search />
-        <div className="lg:ml-[9rem]">
-          <ul className=" flex justify-center items-center gap-[27px] ">
+        <div className="lg:ml-[7rem]">
+          <ul className=" flex justify-center items-center gap-[27px] max-sm:gap-7 ">
             <Link
               href="/"
-              className="text-white font-[700] font-DMSans text-base"
+              className="text-white font-[700] font-DMSans text-base max-sm:text-[12px] max-sm:pr-4"
             >
               Sign In
             </Link>

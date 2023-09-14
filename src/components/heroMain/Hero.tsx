@@ -7,30 +7,30 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const heroData = [
-  // {
-  //   id: 1,
-  //   imgURL: "/hero.png",
-  //   name: "john Wick 3: pallebulum",
-  //   rating: "96.0/100",
-  //   popularity: "99%",
-  //   desc: "Parabellum is the third installment in the John Wick film series, starring Keanu Reeves as the titular character, John Wick. In this action-packed thriller, John Wick is on the run after being declared excommunicado by the international assassin's guild known as the High Table. ",
-  // },
-  // {
-  //   id: 1,
-  //   imgURL: "/hero3.png",
-  //   name: "Spider-Man: Across The Spider",
-  //   rating: "86.0/100",
-  //   popularity: "97%",
-  //   desc: "Spider-Man Across the Spider-Verse is an upcoming animated superhero film and the sequel to the highly acclaimed Spider-Man: Into the Spider-Verse.The movie continues the adventures of Miles Morales, who is once again joined by other Spider-People from different dimensions. ",
-  // },
-  // {
-  //   id: 1,
-  //   imgURL: "/hero4.png",
-  //   name: "Blue Beetle",
-  //   rating: "66.0/100",
-  //   popularity: "60%",
-  //   desc: "Blue Beetle is an upcoming superhero film in the DC Extended Universe (DCEU). The film will introduce the character Jaime Reyes as Blue Beetle, a teenager who gains superpowers from a mysterious scarab beetle. Directed by Angel Manuel So to abilities.",
-  // },
+  {
+    id: 1,
+    imgURL: "/hero.png",
+    name: "john Wick 3: pallebulum",
+    rating: "96.0/100",
+    popularity: "99%",
+    desc: "Parabellum is the third installment in the John Wick film series, starring Keanu Reeves as the titular character, John Wick. In this action-packed thriller, John Wick is on the run after being declared excommunicado by the international assassin's guild known as the High Table. ",
+  },
+  {
+    id: 1,
+    imgURL: "/hero3.png",
+    name: "Spider-Man: Across The Spider",
+    rating: "86.0/100",
+    popularity: "97%",
+    desc: "Spider-Man Across the Spider-Verse is an upcoming animated superhero film and the sequel to the highly acclaimed Spider-Man: Into the Spider-Verse.The movie continues the adventures of Miles Morales, who is once again joined by other Spider-People from different dimensions. ",
+  },
+  {
+    id: 1,
+    imgURL: "/hero4.png",
+    name: "Blue Beetle",
+    rating: "66.0/100",
+    popularity: "60%",
+    desc: "Blue Beetle is an upcoming superhero film in the DC Extended Universe (DCEU). The film will introduce the character Jaime Reyes as Blue Beetle, a teenager who gains superpowers from a mysterious scarab beetle. Directed by Angel Manuel So to abilities.",
+  },
   {
     id: 1,
     imgURL: "/hero5.png",
