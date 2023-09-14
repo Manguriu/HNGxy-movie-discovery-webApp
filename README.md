@@ -21,6 +21,14 @@ Create a movie discovery web application that allows users to search for movies,
     movie title - [data-testid: movie-title]
     movie release date - [data-testid: movie-release-date]
 
+    hero results
+
+![Alt text](public/readme/homepage.webp)
+
+    movie posters
+
+![Alt text](public/readme/moviepage.webp)
+
 2. Movie Search:
 
    Implement a search feature that allows users to search for movies by title.
@@ -36,6 +44,9 @@ Create a movie discovery web application that allows users to search for movies,
    release date (in UTC) - [data-testid: movie-release-date]
    runtime (in minutes) - [data-testid: movie-runtime]
    overview - [data-testid: movie-overview]
+
+   the results
+   ![Alt text](public/readme/moviedetails.webp)
 
 API Integration:
 
