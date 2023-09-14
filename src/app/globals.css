@@ -61,7 +61,7 @@
 
 /* card */
 .movie-card {
-  @apply grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-[80px] mt-10;
+  @apply grid lg:grid-cols-4 md:grid-cols-3 max-sm:grid-cols-3 grid-cols-1 sm:gap-6  max-sm:gap-[10px] gap-[80px] mt-10;
 }
 
 .movie-overview {

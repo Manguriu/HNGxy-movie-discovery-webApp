@@ -7,37 +7,37 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const heroData = [
-  {
-    id: 1,
-    imgURL: "/hero.png",
-    name: "john Wick 3: pallebulum",
-    rating: "96.0/100",
-    popularity: "99%",
-    desc: "Parabellum is the third installment in the John Wick film series, starring Keanu Reeves as the titular character, John Wick. In this action-packed thriller, John Wick is on the run after being declared excommunicado by the international assassin's guild known as the High Table. With a massive bounty on his head, Wick fights his way through a series of intense and stylishly choreographed action sequences, encountering deadly assassins and allies along the way.",
-  },
-  {
-    id: 1,
-    imgURL: "/hero3.png",
-    name: "Spider-Man: Across The Spider",
-    rating: "86.0/100",
-    popularity: "97%",
-    desc: "Spider-Man Across the Spider-Verse is an upcoming animated superhero film and the sequel to the highly acclaimed Spider-Man: Into the Spider-Verse.The movie continues the adventures of Miles Morales, who is once again joined by other Spider-People from different dimensions. It promises to explore the multiverse further, offering a visually stunning and innovative animation style while delivering an exciting and diverse array of Spider-People, each with their unique abilities and backgrounds",
-  },
-  {
-    id: 1,
-    imgURL: "/hero4.png",
-    name: "Blue Beetle",
-    rating: "66.0/100",
-    popularity: "60%",
-    desc: "Blue Beetle is an upcoming superhero film in the DC Extended Universe (DCEU). The film will introduce the character Jaime Reyes as Blue Beetle, a teenager who gains superpowers from a mysterious scarab beetle. Directed by Angel Manuel Soto, the movie is set to explore Jaimes journey as he becomes the Blue Beetle and embraces his newfound abilities to protect his community.",
-  },
+  // {
+  //   id: 1,
+  //   imgURL: "/hero.png",
+  //   name: "john Wick 3: pallebulum",
+  //   rating: "96.0/100",
+  //   popularity: "99%",
+  //   desc: "Parabellum is the third installment in the John Wick film series, starring Keanu Reeves as the titular character, John Wick. In this action-packed thriller, John Wick is on the run after being declared excommunicado by the international assassin's guild known as the High Table. ",
+  // },
+  // {
+  //   id: 1,
+  //   imgURL: "/hero3.png",
+  //   name: "Spider-Man: Across The Spider",
+  //   rating: "86.0/100",
+  //   popularity: "97%",
+  //   desc: "Spider-Man Across the Spider-Verse is an upcoming animated superhero film and the sequel to the highly acclaimed Spider-Man: Into the Spider-Verse.The movie continues the adventures of Miles Morales, who is once again joined by other Spider-People from different dimensions. ",
+  // },
+  // {
+  //   id: 1,
+  //   imgURL: "/hero4.png",
+  //   name: "Blue Beetle",
+  //   rating: "66.0/100",
+  //   popularity: "60%",
+  //   desc: "Blue Beetle is an upcoming superhero film in the DC Extended Universe (DCEU). The film will introduce the character Jaime Reyes as Blue Beetle, a teenager who gains superpowers from a mysterious scarab beetle. Directed by Angel Manuel So to abilities.",
+  // },
   {
     id: 1,
     imgURL: "/hero5.png",
     name: "Oppenheimer",
     rating: "86.0/100",
     popularity: "87%",
-    desc: "Oppenheimer is an upcoming biographical drama film directed by Christopher Nolan. The film is expected to explore the life and work of J. Robert Oppenheimer, a prominent physicist who played a key role in the development of the atomic bomb during World War II as part of the Manhattan Project",
+    desc: "Oppenheimer is an upcoming biographical drama film directed by Christopher Nolan. The film is expected to explore the life and work of J. Robert Oppenheimer, a prominent physicist who played a key role in the development of the atomic bomb during World War II.",
   },
   {
     id: 1,
@@ -45,7 +45,7 @@ const heroData = [
     name: "Transformers: Rise of the Beasts",
     rating: "96.0/100",
     popularity: "90%",
-    desc: "Transformers: Rise of the Beasts is an upcoming installment in the popular Transformers film franchise. The movie is set to explore the origins of the Transformers on Earth and introduce new robotic characters known as Beasts. These Beasts are expected to include Maximals, Predacons, and Terrorcons, expanding the lore of the Transformers universe.",
+    desc: "Transformers: Rise of the Beasts is an upcoming installment in the popular Transformers film franchise. The movie is set to explore the origins of the Transformers on Earth and introduce new robotic characters known as Beasts.",
   },
 ];
 

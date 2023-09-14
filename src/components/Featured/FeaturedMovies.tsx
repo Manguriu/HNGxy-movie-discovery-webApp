@@ -34,14 +34,17 @@ function FeaturedMovies() {
   }, []);
 
   return (
-    <section className="max-container">
+    <section className="max-container max-sm:mt-4 ">
       <div className="flex flex-row  items-center justify-between gap-5">
-        <Link href="/" className="font-bold text-2xl font-palanquin">
+        <Link
+          href="/"
+          className="font-bold text-2xl font-palanquin max-sm:text-sm"
+        >
           Featured Movie
         </Link>
         <Link
           href="/"
-          className="font-[400] font-DMSans text-rose-700 leading-[24px] flex gap-[8px]"
+          className="font-[400] font-DMSans text-rose-700 leading-[24px] flex gap-[8px] max-sm:text-sm"
         >
           See more
           <Image src="/more.svg" alt="" width={20} height={20} />

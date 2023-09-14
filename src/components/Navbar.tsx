@@ -6,27 +6,29 @@ import Search from "./Search";
 
 function Navbar() {
   return (
-    <header className="sm:px-16 px-8 py-8 absolute z-10 w-[1440px] ml-14 h-[600px] ">
-      <div className="flex items-center gap-[24px] max-lg:flex-col">
-        <div className="mr-[10rem]">
-          {" "}
-          <Link href="/" className="flex gap-[24px] items-center">
+    <header className="sm:px-16 lg:px-8 lg:py-8 absolute z-10 lg:w-[1440px] md:w-full sm:w-full  max-lg:ml-5 lg:h-[600px] ">
+      <div className="flex items-center lg:gap-[24px] max-lg:flex-row max-lg:flex max-lg:pt-2  max-lg:gap-24 max-md:gap-24 max-sm:gap-24 md:justify-between">
+        <div className="sm:left-0 ">
+          <Link
+            href="/"
+            className="flex lg:gap-[24px] max-lg:gap-[12px] items-center"
+          >
             <img src="/tv.png" alt="" width={50} />
-            <span className="leading-[24px] text-2xl font-DMsans font-[700] text-white max-lg:text-[20px]">
+            <span className="leading-[24px] text-2xl font-DMsans font-[700] text-white max-lg:text-[15px]">
               MovieBox
             </span>
           </Link>
         </div>
         <Search />
-        <div className="ml-[10rem]">
-          <ul className="flex-1 flex justify-center items-center gap-[27px] max-lg:hidden">
+        <div className="lg:ml-[9rem]">
+          <ul className=" flex justify-center items-center gap-[27px] ">
             <Link
               href="/"
               className="text-white font-[700] font-DMSans text-base"
             >
               Sign In
             </Link>
-            <Link href="/" className="flex">
+            <Link href="/" className="flex max-lg:hidden">
               <Image
                 src="/Ellipse1.svg"
                 alt=""
