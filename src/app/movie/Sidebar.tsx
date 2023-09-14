@@ -8,24 +8,28 @@ import React, { useState, useEffect } from "react";
 
 const sidebarData = [
   {
+    id: 1,
     Name: "Home",
     imgUrl: "/images/home.png",
     vector: "/images/vector.svg",
     href: "/",
   },
   {
+    id: 2,
     Name: "Movies",
     imgUrl: "/images/projector.png",
     vector: "/images/vector.svg",
     href: "/movie",
   },
   {
+    id: 3,
     Name: "TV Series",
     imgUrl: "/images/show.png",
     vector: "/images/vector.svg",
-    href: "/",
+    href: "/series",
   },
   {
+    id: 4,
     Name: "Upcoming",
     imgUrl: "/images/calendar.png",
     vector: "/images/vector.svg",
@@ -68,11 +72,11 @@ function Sidebar() {
           </Link>
         </div>
         <div className={`mt-[90px]`}>
-          {sidebarData.map((data, index) => (
+          {sidebarData.map((data) => (
             <>
               <Link href={data.href}>
                 <div
-                  key={index}
+                  key={data.id}
                   className={`w-max  group-hover:opacity-100 transition-opacity duration-300 ease-in-out ${
                     pathname === data.href ? "bg-[#BE123C]/10" : ""
                   }`}

@@ -5,30 +5,32 @@ import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 function FeaturedMovies() {
   const [movies, setMovies] = useState([]);
 
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      url: "https://api.themoviedb.org/3/trending/all/day",
-      params: { language: "en-US" },
-      headers: {
-        accept: "application/json",
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZTkxNGJkNTQ0YmQxN2M1NTZjOGE5MGVhMmY2YmY4YiIsInN1YiI6IjY0ZmY1MzQ1ZWZlYTdhMDBlMDM0YzYzNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HeH1DhJJPZrGOzzuuAGND4YRD6DG-EB4d991CL5nuYM",
-      },
-    };
+  const fetchTopRatedMovies = async () => {
+    try {
+      const response = await axios.get(
+        "https://api.themoviedb.org/3/movie/top_rated?language=en-US",
+        {
+          headers: {
+            accept: "application/json",
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZTkxNGJkNTQ0YmQxN2M1NTZjOGE5MGVhMmY2YmY4YiIsInN1YiI6IjY0ZmY1MzQ1ZWZlYTdhMDBlMDM0YzYzNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HeH1DhJJPZrGOzzuuAGND4YRD6DG-EB4d991CL5nuYM",
+          },
+        }
+      );
 
-    axios
-      .request(options)
-      .then(function (response) {
-        setMovies(response.data.results);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
+      setMovies(response.data.results.slice(0, 10));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchTopRatedMovies();
   }, []);
 
   return (
@@ -46,9 +48,24 @@ function FeaturedMovies() {
         </Link>
       </div>
       <div data-testid="movie-card" className="movie-card">
-        {movies.map((moData, id) => (
-          <FeaturedCard key={id} moData={moData} id={id} />
-        ))}
+        {movies.length === 0 ? (
+          <>
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+            <Loader />
+          </>
+        ) : (
+          movies.map((moData, id) => (
+            <FeaturedCard key={id} moData={moData} id={id} />
+          ))
+        )}
       </div>
     </section>
   );

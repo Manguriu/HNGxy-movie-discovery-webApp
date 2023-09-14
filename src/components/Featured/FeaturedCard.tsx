@@ -11,10 +11,10 @@ const getPoster = (posterPath: any) => {
 
 function FeaturedCard({ moData, id }: { moData: any; id: any }) {
   const imageUrl = getPoster(moData.poster_path);
-  console.log(imageUrl);
+
   return (
     <Link
-      href={`/movie?id=${moData.id}`}
+      href={`/movie/${moData.id}`}
       passHref
       key={id}
       className=" hover:scale-102 rounded-md hover:shadow-lg transform transition duration-100 ease-in-out"
