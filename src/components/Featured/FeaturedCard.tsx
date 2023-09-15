@@ -74,18 +74,18 @@ function FeaturedCard({ moData, id }: { moData: any; id: any }) {
                 {moData.title}
               </p>
             </div>
-            <div className="flex gap-10 mt-[12px] w-[250px] max-sm:gap-1 max-lg:text-[10px] max-lg:gap-2 max-xl:text-[12px] max-xl:gap-2">
-              <p className="text-gray-900 flex gap-2 items-center max-sm:text-[7px] ">
+            <div className="flex gap-8 mt-[12px] w-[250px] max-sm:gap-1 max-lg:text-[10px] max-lg:gap-1 max-xl:text-[12px] max-xl:gap-2">
+              <p className="text-gray-900 flex gap-1 items-center max-sm:text-[7px] ">
                 <span className="max-sm:w-[10px] max-lg:w-[25px] max-xl:w-[25px]">
                   <img src="/imdb.png" alt="" width={35} />
                 </span>
-                {moData.vote_average}/{moData.vote_count}
+                {moData.vote_count}
               </p>
-              <p className="text-gray-900 ml-8 flex gap-2 max-sm:gap-1 items-center max-sm:text-[7px] max-lg:text-[10px] max-xl:text-[12px]">
+              <p className="text-gray-900 ml-8 flex gap-1 max-sm:gap-1 items-center max-sm:text-[7px] max-lg:text-[10px] max-xl:text-[12px]">
                 <span className="max-sm:w-[10px] max-lg:w-[20px] max-xl:w-[20px] ">
                   <img src="/tomato.png" alt="" width={25} />
                 </span>
-                97%
+                {moData.vote_average}%
               </p>
             </div>
             <p className="text-slate-400 text-sm mt-[12px] max-sm:text-[9px] max-lg:text-[10px] max-xl:text-[12px]">

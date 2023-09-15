@@ -19,7 +19,7 @@ const sidebarData = [
     Name: "Movies",
     imgUrl: "/images/projector.png",
     vector: "/images/vector.svg",
-    href: "/movie/1",
+    href: `/movie/1`,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const sidebarData = [
   },
 ];
 
-function Sidebar() {
+function Sidebar({ movieid }: { movieid: any }) {
   const pathname = usePathname();
   const [sidebarVisible, setSidebarVisible] = useState(true);
 
@@ -86,7 +86,7 @@ function Sidebar() {
                 <div
                   key={data.id}
                   className={`w-max  group-hover:opacity-100 transition-opacity duration-300 ease-in-out ${
-                    pathname === data.href ? "bg-[#BE123C]/10" : ""
+                    pathname === movieid ? "bg-[#BE123C]/40" : ""
                   }`}
                 >
                   <div className="mt-[50px] flex gap-[15px] lg:text-[20px] lg:w-[226px] max-lg:w-[100px]  max-sm:w-[60px] h-[82px] items-center justify-center ">
@@ -96,7 +96,7 @@ function Sidebar() {
                     <h1 className=" max-lg:text-[9px] font-poppins font-[600] text-[#BE123C]">
                       {data.Name}
                     </h1>
-                    {pathname === data.href && (
+                    {pathname === movieid && (
                       <div className="bg-[#BE123C] h-[86px] flex absolute -right-0 ">
                         <Image
                           src={data.vector}

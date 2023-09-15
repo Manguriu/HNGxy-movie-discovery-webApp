@@ -113,7 +113,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
             <div className="mt-5 relative">
               <section className="w-fit relative items-center">
                 <div className="flex justify-between gap-[24px] items-center max-lg:flex-col max-xl:flex-col  max-lg:w-fit">
-                  <div className="font-poppins font-[400] text-[20px] max-lg:text-[15px] max-sm:text-[10px] ">
+                  <div className="font-poppins font-[400] text-[17px] max-lg:text-[17px] max-sm:text-[10px] ">
                     <p className="text-[#333]" data-testid="movie-overview">
                       {movieData.overview}
                     </p>

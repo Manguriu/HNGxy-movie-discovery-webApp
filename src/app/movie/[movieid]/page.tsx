@@ -5,6 +5,7 @@ import Sidebar from "../Sidebar";
 import axios from "axios";
 import Card from "../Card";
 import Loader from "../Loader";
+import Transition from "@/components/Transition";
 
 function MoviePage({ params: { movieid, runtime } }: any) {
   const [movieData, setMovieData] = useState({});
@@ -36,7 +37,8 @@ function MoviePage({ params: { movieid, runtime } }: any) {
 
   return (
     <section className="movie-overview max-lg:flex-col  ">
-      <Sidebar />
+      <Transition />
+      <Sidebar movieid={movieid} />
       {Object.keys(movieData).length > 0 ? (
         <Card movieData={movieData} movieid={movieid} />
       ) : (
