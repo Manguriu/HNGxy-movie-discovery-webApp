@@ -15,8 +15,8 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
     <section>
       <div>
         <Link href="/">
-          <div className="w-full relative">
-            <div className="relative bg-black bg-opacity-10 backdrop-blur-sm h-[475px] rounded-lg">
+          <div className="w-full relative ">
+            <div className="relative bg-black bg-opacity-10 backdrop-blur-sm h-[475px] rounded-lg max-xs:h-[200px]">
               <div className="h-full w-full relative">
                 <Image
                   src={imageUrl}

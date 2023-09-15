@@ -52,7 +52,7 @@ function Sidebar() {
           sidebarVisible
             ? "transform translate-x-0 transition-transform duration-300 ease-in-out"
             : "transform -translate-x-full transition-transform duration-300 ease-in-out"
-        } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5 max-xs:top-0`}
+        } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5 `}
         onClick={() => setSidebarVisible(!sidebarVisible)}
       >
         <img
@@ -60,7 +60,7 @@ function Sidebar() {
           alt=""
           width={50}
           height={50}
-          className="max-sm:w-10"
+          className="max-sm:w-8"
         />
       </div>
       <div
