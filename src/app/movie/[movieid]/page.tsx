@@ -35,7 +35,7 @@ function MoviePage({ params: { movieid, runtime } }: any) {
   }, [movieid]);
 
   return (
-    <section className="movie-overview">
+    <section className="movie-overview max-lg:flex-col  ">
       <Sidebar />
       {Object.keys(movieData).length > 0 ? (
         <Card movieData={movieData} movieid={movieid} />

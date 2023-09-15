@@ -11,7 +11,6 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
 
   const imageUrl = getPoster(movieData.backdrop_path);
 
-  console.log(movieData);
   return (
     <section>
       <div>
@@ -41,14 +40,14 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
             </div>
           </div>
         </Link>
-        <div className="pt-5 flex flex-col justify-evenly ">
+        <div className="pt-5 flex justify-evenly">
           <div className="items-center ">
             <div className="mt-5 relative">
               <section>
                 <div>
-                  <div className="flex items-center justify-between mt-4">
+                  <div className="flex items-center justify-between mt-4 max-xl:flex-col max-lg:flex-col ">
                     <div className="font-extrabold text-[23px] mb-2 mt-2 font-poppins flex items-center gap-4 text-[#404040]">
-                      <p>
+                      <p className="max-xl:text-[20px] max-sm:text-[10px]">
                         <span data-testid="movie-title">
                           {movieData.title}{" "}
                         </span>
@@ -82,21 +81,27 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         ) => (
                           <span
                             key={index}
-                            className="inline-block border border-[#F8E7EB] rounded-[15px] px-3 py-1 text-sm font-[500] text-[#B91C1C] leading-normal"
+                            className="inline-block border border-[#F8E7EB] rounded-[15px] max-sm:px-1 max-sm:text-[8px] px-3 py-1 text-sm font-[500] text-[#B91C1C] leading-normal"
                           >
                             {genre.name}
                           </span>
                         )
                       )}
                     </div>
-                    <div className="ml-10">
+                    <div className="ml-10 max-lg:flex-col">
                       <div className="text-2xl flex items-center gap-2 justify-center font-poppins leading-normal">
-                        <img src="/star.png" alt="" width={30} height={30} />
-                        <p className="text-[#E8E8E8] text-[25px] font-[500]">
+                        <img
+                          src="/star.png"
+                          alt=""
+                          width={30}
+                          height={30}
+                          className="max-sm:w-5"
+                        />
+                        <p className="text-[#E8E8E8] text-[25px] font-[500] max-sm:text-[15px]">
                           {movieData.vote_average}
                           <span>|</span>
                         </p>
-                        <p className="text-[#666] text-[20px] font-[500]">
+                        <p className="text-[#666] text-[20px] font-[500]  max-sm:text-[15px] ">
                           {movieData.vote_count}K
                         </p>
                       </div>
@@ -107,13 +112,13 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
             </div>
             <div className="mt-5 relative">
               <section className="w-fit relative items-center">
-                <div className="flex justify-between gap-[24px] items-center">
-                  <div className="font-poppins font-[400] text-[20px]">
+                <div className="flex justify-between gap-[24px] items-center max-lg:flex-col max-xl:flex-col  max-lg:w-fit">
+                  <div className="font-poppins font-[400] text-[20px] max-lg:text-[15px] max-sm:text-[10px] ">
                     <p className="text-[#333]" data-testid="movie-overview">
                       {movieData.overview}
                     </p>
                     <div className="relative mt-10">
-                      <div className="flex flex-col gap-[31px] font-[400] text-[20px]">
+                      <div className="flex flex-col gap-[31px] font-[400] text-[20px] max-xl:hidden">
                         <p className="text-[#333]">
                           Director :
                           <span className="text-[#BE123C]">
@@ -134,7 +139,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         </p>
                       </div>
                       <div className="w-full mt-6 flex items-center  gap-2 border border-[#C7C7C7]  rounded-[10px] text-white">
-                        <button className="w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px]">
+                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-50px">
                           Top rated movie #65
                         </button>
                         <input

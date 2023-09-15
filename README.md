@@ -12,6 +12,14 @@ STAGE 2 TASKObjective
 Create a movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies. You’ll be consuming data from the TMDB API.Requirements1. User Interface:
 
     Create a responsive and visually appealing user interface for the application. Here's the link to the design you're expected to replicate: https://www.figma.com/file/tVfgoNfhYkQaUkh8LGqRab/MovieBox-(Community)?type=design&node-id=1220-324&mode=design&t=6998DWtjQrxz8mOf-0
+
+
+    proposed desgns from the above link
+
+![Alt text](public/readme/proposeddesign.webp)
+
+![Alt text](public/readme/proposeddesign2.webp)
+
     You should list the top 10 movies on the homepage.
     They should be displayed in a grid layout with their movie posters.
     The Card component should display the movie title and release date.

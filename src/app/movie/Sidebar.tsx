@@ -52,13 +52,13 @@ function Sidebar() {
           sidebarVisible
             ? "transform translate-x-0 transition-transform duration-300 ease-in-out"
             : "transform -translate-x-full transition-transform duration-300 ease-in-out"
-        } absolute z-20 mt-4 ml-2 hover:cursor-pointer`}
+        } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5`}
         onClick={() => setSidebarVisible(!sidebarVisible)}
       >
         <img src="/tv.png" alt="" width={50} height={50} />
       </div>
       <div
-        className={`sidebar relative rounded-r-[45px] border border-black border-opacity-30 transform transition-transform duration-300 ease-in-out ${
+        className={`sidebar max-lg:w-full relative  rounded-r-[45px] border border-black max-lg:border-white border-opacity-30 transform transition-transform duration-300 ease-in-out max-lg:h-[100px] ${
           sidebarVisible ? "translate-x-0" : "translate-x-full"
         } ${sidebarVisible ? "" : "hidden"}`}
       >
@@ -66,14 +66,16 @@ function Sidebar() {
           className={`mt-9 ml-8 flex gap-[24px] justify-center items-center`}
         >
           <Link href="/">
-            <span className="leading-[24px] text-2xl font-DMsans font-[700] text-[#333] max-lg:text-[20px]">
+            <span className="max-lg:hidden leading-[24px] text-2xl font-DMsans font-[700] text-[#333] max-lg:text-[20px]">
               MovieBox
             </span>
           </Link>
         </div>
-        <div className={`mt-[90px]`}>
-          {sidebarData.map((data) => (
-            <>
+        <div
+          className={`lg:mt-[90px] max-lg:flex max-lg:right-0 max-lg:flex-row max-lg:-top-12 max-lg:absolute `}
+        >
+          {sidebarData.map((data, index) => (
+            <div key={index} className="">
               <Link href={data.href}>
                 <div
                   key={data.id}
@@ -81,11 +83,11 @@ function Sidebar() {
                     pathname === data.href ? "bg-[#BE123C]/10" : ""
                   }`}
                 >
-                  <div className="mt-[50px] flex gap-[15px] text-[20px] w-[226px] h-[82px] items-center justify-center group">
-                    <span>
+                  <div className="mt-[50px] flex gap-[15px] lg:text-[20px] lg:w-[226px] max-lg:w-[100px] max-sm:w-[60px] h-[82px] items-center justify-center ">
+                    <span className="max-sm:hidden">
                       <Image src={data.imgUrl} alt="" width={25} height={25} />
                     </span>
-                    <h1 className="font-poppins font-[600] text-[#BE123C]">
+                    <h1 className=" max-lg:text-[9px] font-poppins font-[600] text-[#BE123C]">
                       {data.Name}
                     </h1>
                     {pathname === data.href && (
@@ -101,10 +103,10 @@ function Sidebar() {
                   </div>
                 </div>
               </Link>
-            </>
+            </div>
           ))}
         </div>
-        <div className={`w-max flex ml-6 mt-[24px] `}>
+        <div className={`max-lg:hidden w-max flex ml-6 mt-[24px] `}>
           <div className="w-[170px] flex flex-col h-[210px] border p-[16px] border-[#BE123C] rounded-[20px] items-center justify-center ">
             <p className="text-[15px] font-[600]">
               Play movie quizes and earn free tickets
@@ -119,12 +121,20 @@ function Sidebar() {
         </div>
 
         <Link href="/">
-          <div className={`w-max`}>
-            <div className="mt-[5px] flex gap-[15px] text-[20px] w-[226px] h-[82px] items-center justify-center group">
+          <div className={`w-max absolute max-lg:-top-0 `}>
+            <div className="mt-[5px] flex lg:gap-[15px] max-lg:gap-0 text-[20px] w-[226px] h-[82px] items-center justify-center ">
               <span>
-                <Image src="/images/logout.png" alt="" width={25} height={25} />
+                <Image
+                  src="/images/logout.png"
+                  alt=""
+                  width={25}
+                  height={25}
+                  className="max-lg:hidden"
+                />
               </span>
-              <h1 className="font-poppins font-[600] text-[#666]">Log out</h1>
+              <h1 className="font-poppins font-[600] text-[#666] max-lg:text-[12px] max-sm:hidden">
+                Log out
+              </h1>
             </div>
           </div>
         </Link>
