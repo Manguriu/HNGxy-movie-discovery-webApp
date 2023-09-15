@@ -139,7 +139,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         </p>
                       </div>
                       <div className="w-full mt-6 flex items-center  gap-2 border border-[#C7C7C7]  rounded-[10px] text-white">
-                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-50px">
+                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-[100px] max-sm:p-4 max-sm:px-4">
                           Top rated movie #65
                         </button>
                         <input
@@ -160,8 +160,8 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                     </div>
                   </div>
                   <div className="items-center w-full pb-4">
-                    <div className=" flex flex-col items-center justify-center gap-[24px]">
-                      <button className="w-full flex gap-[10px] bg-[#BE123C] text-white font-[500] text-[20px] font-poppins leading-normal items-center justify-center h-[55px] rounded-[10px]">
+                    <div className=" flex flex-col items-center justify-center gap-[24px] ">
+                      <button className="w-full flex gap-[10px] bg-[#BE123C] text-white font-[500] text-[20px]  font-poppins leading-normal items-center justify-center h-[55px] rounded-[10px]">
                         <img src="/ticket.png" alt="" width={24} height={24} />
                         See Showtimes
                       </button>
