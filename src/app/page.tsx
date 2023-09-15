@@ -2,12 +2,10 @@
 import Navbar from "@/components/Navbar";
 import FeaturedMovies from "@/components/Featured/FeaturedMovies";
 import Hero from "@/components/heroMain/Hero";
-import Transition from "@/components/Transition";
 
 export default function Home() {
   return (
     <main className="max-container bg-white">
-      <Transition />
       <section>
         <Navbar />
       </section>

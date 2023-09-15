@@ -13,7 +13,7 @@ function FeaturedMovies() {
   const fetchTopRatedMovies = async () => {
     try {
       const response = await axios.get(
-        "https://api.themoviedb.org/3/trending/all/day?language=en-US",
+        "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1",
         {
           headers: {
             accept: "application/json",
