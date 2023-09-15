@@ -55,7 +55,13 @@ function Sidebar() {
         } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5`}
         onClick={() => setSidebarVisible(!sidebarVisible)}
       >
-        <img src="/tv.png" alt="" width={50} height={50} />
+        <img
+          src="/tv.png"
+          alt=""
+          width={50}
+          height={50}
+          className="max-sm:w-10"
+        />
       </div>
       <div
         className={`sidebar max-lg:w-full relative  rounded-r-[45px] border border-black max-lg:border-white border-opacity-30 transform transition-transform duration-300 ease-in-out max-lg:h-[100px] ${

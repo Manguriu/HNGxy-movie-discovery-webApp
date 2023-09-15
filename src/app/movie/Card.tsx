@@ -139,7 +139,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         </p>
                       </div>
                       <div className="w-full mt-6 flex items-center  gap-2 border border-[#C7C7C7]  rounded-[10px] text-white">
-                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-[100px] max-sm:p-4 max-sm:px-4">
+                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-[90px] ">
                           Top rated movie #65
                         </button>
                         <input
