@@ -52,7 +52,7 @@ function Sidebar() {
           sidebarVisible
             ? "transform translate-x-0 transition-transform duration-300 ease-in-out"
             : "transform -translate-x-full transition-transform duration-300 ease-in-out"
-        } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5`}
+        } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5 max-xs:top-0`}
         onClick={() => setSidebarVisible(!sidebarVisible)}
       >
         <img
@@ -89,7 +89,7 @@ function Sidebar() {
                     pathname === data.href ? "bg-[#BE123C]/10" : ""
                   }`}
                 >
-                  <div className="mt-[50px] flex gap-[15px] lg:text-[20px] lg:w-[226px] max-lg:w-[100px] max-sm:w-[60px] h-[82px] items-center justify-center ">
+                  <div className="mt-[50px] flex gap-[15px] lg:text-[20px] lg:w-[226px] max-lg:w-[100px]  max-sm:w-[60px] h-[82px] items-center justify-center ">
                     <span className="max-sm:hidden">
                       <Image src={data.imgUrl} alt="" width={25} height={25} />
                     </span>

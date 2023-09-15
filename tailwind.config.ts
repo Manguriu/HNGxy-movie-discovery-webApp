@@ -16,12 +16,11 @@ const config: Config = {
         xl: ['20px', '24.38px'],
         '2xl': ['24px', '29.26px'],
         '3xl': ['36px', '50px'],
-        '4xl': ['48px', '58px'],
-        '8xl': ['96px', '106px']
       },
      
       screens: {
-        "wide": "1440px"
+        "wide": "1440px",
+        "xs":"576px"
       },
       backgroundImage: {
         'hero': "url('/hero.png')",

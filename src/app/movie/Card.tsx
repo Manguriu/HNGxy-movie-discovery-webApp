@@ -139,13 +139,13 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         </p>
                       </div>
                       <div className="w-full mt-6 flex items-center  gap-2 border border-[#C7C7C7]  rounded-[10px] text-white">
-                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-[90px] ">
+                        <button className="lg:w-[253px] text-white bg-[#BE123C] h-[55px] rounded-[10px] max-sm:w-[100px] max-xs:w-[70px] max-xs:text-[8px] ">
                           Top rated movie #65
                         </button>
                         <input
                           type="text"
                           placeholder="Awards 9 nominations"
-                          className=" text-black font-poppins font-[500] text-[20px] bg-inherit outline-none "
+                          className=" text-black font-poppins font-[500] text-[20px] max-xs:text-[10px] bg-inherit outline-none "
                         />
                         <div className="flex absolute right-4 items-center font-extrabold">
                           <img
