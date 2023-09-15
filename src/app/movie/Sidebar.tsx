@@ -52,7 +52,7 @@ function Sidebar() {
           sidebarVisible
             ? "transform translate-x-0 transition-transform duration-300 ease-in-out"
             : "transform -translate-x-full transition-transform duration-300 ease-in-out"
-        } absolute z-20 mt-4 ml-2 hover:cursor-pointer max-lg:mt-5 `}
+        } absolute z-20 mt-5 ml-2 hover:cursor-pointer max-lg:mt-5 max-xs:mt-7 `}
         onClick={() => setSidebarVisible(!sidebarVisible)}
       >
         <img

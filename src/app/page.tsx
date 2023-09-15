@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import FeaturedMovies from "@/components/Featured/FeaturedMovies";
-import Footer from "@/components/Footer";
 import Hero from "@/components/heroMain/Hero";
 
 export default function Home() {
@@ -14,9 +13,6 @@ export default function Home() {
       </section>
       <section className="sm:px-[10rem] px-8 sm:py-5 py-4 ">
         <FeaturedMovies />
-      </section>
-      <section className="">
-        <Footer />
       </section>
     </main>
   );

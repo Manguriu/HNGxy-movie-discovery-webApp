@@ -86,7 +86,7 @@ function Hero() {
     ),
   };
   return (
-    <section className="max-w-[1440px] flex xl:flex-row flex-col mx-auto relative">
+    <section className="max-w-full flex xl:flex-row flex-col mx-auto relative">
       <Slider {...settings}>
         {heroData.map((data, id) => (
           <section key={id}>

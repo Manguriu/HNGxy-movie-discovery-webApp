@@ -88,7 +88,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                         )
                       )}
                     </div>
-                    <div className="ml-10 max-lg:flex-col">
+                    <div className="lg:ml-10 max-lg:flex-col">
                       <div className="text-2xl flex items-center gap-2 justify-center font-poppins leading-normal">
                         <img
                           src="/star.png"
@@ -118,7 +118,7 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                       {movieData.overview}
                     </p>
                     <div className="relative mt-10">
-                      <div className="flex flex-col gap-[31px] font-[400] text-[20px] max-xl:hidden">
+                      <div className="flex flex-col gap-[31px] font-[400] text-[20px] max-lg:text-[10px]">
                         <p className="text-[#333]">
                           Director :
                           <span className="text-[#BE123C]">
@@ -153,20 +153,32 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                             alt=""
                             width={30}
                             height={30}
-                            className="text-black"
+                            className="text-black max-xs:w-[15px]"
                           />
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="items-center w-full pb-4">
-                    <div className=" flex flex-col items-center justify-center gap-[24px] ">
-                      <button className="w-full flex gap-[10px] bg-[#BE123C] text-white font-[500] text-[20px]  font-poppins leading-normal items-center justify-center h-[55px] rounded-[10px]">
-                        <img src="/ticket.png" alt="" width={24} height={24} />
+                    <div className=" flex flex-col items-center justify-center gap-[24px]">
+                      <button className="max-xs:text-[10px] w-full flex gap-[10px] bg-[#BE123C] text-white font-[500] text-[20px]  font-poppins leading-normal items-center justify-center h-[55px] rounded-[10px]">
+                        <img
+                          src="/ticket.png"
+                          alt=""
+                          width={24}
+                          height={24}
+                          className="max-xs:w-[15px]"
+                        />
                         See Showtimes
                       </button>
-                      <button className=" w-full flex gap-[10px] bg-[#F8E7EB] text-[#333] font-[500] text-[20px] font-poppins leading-normal items-center justify-center h-[55px] rounded-[10px] border border-[#BE123C]">
-                        <img src="/List.png" alt="" width={24} height={24} />
+                      <button className="max-xs:text-[10px] w-full flex gap-[10px] bg-[#F8E7EB] text-[#333] font-[500] text-[20px] font-poppins leading-normal items-center justify-center h-[55px] rounded-[10px] border border-[#BE123C]">
+                        <img
+                          src="/List.png"
+                          alt=""
+                          width={24}
+                          height={24}
+                          className="max-xs:w-[15px]"
+                        />
                         More watch options
                       </button>
                       <div className="w-full relative rounded-[15px]">
@@ -175,11 +187,12 @@ function Card({ movieData, movieid }: { movieData: any; movieid: any }) {
                           alt=""
                           width={360}
                           height={229}
-                          className="w-full"
                         />
                         <div className="absolute bottom-0 left-0 right-0 rounded-[15px] h-[52px] font-poppins flex bg-black bg-opacity-10 backdrop-blur-sm items-center justify-center text-[#E8E8E8] gap-[12px]">
                           <img src="/List2.svg" alt="" width={23} height={23} />
-                          <p className="">The Best Movies Shows in September</p>
+                          <p className="max-xs:text-[10px]">
+                            The Best Movies Shows in September
+                          </p>
                         </div>
                       </div>
                     </div>
