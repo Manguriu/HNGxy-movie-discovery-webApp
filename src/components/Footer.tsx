@@ -41,7 +41,7 @@ function Footer() {
               alt=""
               width={24}
               height={27.429}
-              className="max-sm:w-[40px]"
+              className="max-sm:w-[10px]"
             />
           </Link>
         </div>
